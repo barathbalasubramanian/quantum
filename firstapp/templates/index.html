@@ -1,0 +1,44 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Agri E-commerce</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <script src="{% static 'css/js/index.js' %}"></script>
+</head>
+<body>
+    <div class="home">
+        <div class="header">
+            <div class="agri">Agriculture</div>
+            <div class="photo"><span class="material-symbols-outlined">qr_code_scanner</span></div>
+        </div>
+        
+        <div class="card">
+            <div class="close-btn"><span class="material-symbols-outlined">close</span></div>
+            <div class="image">
+                <img id="previewImage" src="{% static 'css/images/plant1.jpg' %}" alt="Plant Image">
+            </div>
+            <div class="open-cam btn"> 
+                <button> Open Camera</button>
+            </div>
+            <div class="upload-btn btn">
+                <input type="file" id="imageInput" name="image" style="display:none">
+                <button type="button" id="triggerInput">Upload</button>
+            </div>
+            <!-- Hidden submit button -->
+            <div class="submit-btn btn" style="display: none;">
+                <button type="submit" id="submitButton">Submit & Analyze</button>
+            </div>
+        </div>
+               
+        <div class="footer">
+            <a href="{% url 'addproducts'%}"><div class="btn"> Add Our Products <span class="material-symbols-outlined">arrow_selector_tool</span></div></a>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Poppins:ital,wght@0,200;0,300;1,200&family=Work+Sans:wght@300&display=swap');
+
+
+body {
+    font-family: 'Poppins';
+    margin: 0;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+.image {
+    max-width: 20em;
+    max-height: 27em;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: green;
+}
+
+.home {
+    max-height: 100vh;
+}
+
+.header {
+    display: flex;
+    /* width: 100%; */
+    align-items: center;
+    justify-content: space-around;
+    padding: .5em 1em;
+    font-size: 24px;
+    color: white;
+    background-color: green;
+}
+
+.photo {
+    margin-top: .3em;
+    cursor: pointer;
+}
+
+.photo:hover {
+    scale: 1.2;
+}
+
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;   
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: auto;
+    margin-top: 3em;
+
+    display: none;
+    overflow: scroll;
+}
+
+.card .btn button{
+    width: auto;
+    background-color: rgba(0, 128, 0 , 80%);
+    padding: .5em 1em;
+    color: white;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    min-width: 10em;
+    max-width: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+}
+
+.btn button:hover {
+    background-color: rgba(0, 128, 0 , 50%);
+}
+
+
+.close-btn {
+    border: none;
+    background: none;
+    color: black;
+    outline: none;
+
+    position: absolute;
+    top: -5px;
+    right: 20%;
+    cursor: pointer;
+}
+
+.close-btn span {
+    font-size: 35px !important;
+}
+
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: green;
+    gap: 1em;
+    padding: .5em 0;
+    width: 100%;
+    cursor: pointer;
+}
+
+.footer:hover {
+    scale: 1.1;
+    transition: all .3s ease-in-out;
+}
+
+.footer .btn {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
